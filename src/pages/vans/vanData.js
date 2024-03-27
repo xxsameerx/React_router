@@ -1,0 +1,60 @@
+import React from "react";
+import { v4 as uuid } from "uuid";
+const vansData = [
+  {
+    uuid: uuid(),
+    name: "Modest Explorer",
+    type: "simple",
+    price: 60,
+    description:
+      "The Modest Explorer is designed to get you into nature with solar panels, a composting toilet, water tank, and kitchenette.",
+    imageUrl: `https://assets.scrimba.com/advanced-react/react-router/modest-explorer.png`,
+  },
+  {
+    uuid: uuid(),
+    name: "Beach Bum",
+    type: "rugged",
+    price: 80,
+    description:
+      "Beach Bum is a portable home inspired by surfers with unique features for adventurous travelers.",
+    imageUrl: `https://assets.scrimba.com/advanced-react/react-router/beach-bum.png`,
+  },
+  {
+    uuid: uuid(),
+    name: "Reliable Red",
+    type: "luxury",
+    price: 100,
+    description:
+      "Reliable Red is a cozy van for travelers, equipped with a small kitchen and ample space.",
+    imageUrl: `https://assets.scrimba.com/advanced-react/react-router/reliable-red.png`,
+  },
+  {
+    uuid: uuid(),
+    name: "Dreamfinder",
+    type: "simple",
+    price: 65,
+    description:
+      "Dreamfinder is perfect for travel with a spacious interior, large windows, and easy-to-clean flooring.",
+    imageUrl: `https://assets.scrimba.com/advanced-react/react-router/dreamfinder.png`,
+  },
+  {
+    uuid: uuid(),
+    name: "The Cruiser",
+    type: "luxury",
+    price: 120,
+    description:
+      "The Cruiser offers comfort and luxury with spacious interiors, ample storage, and panoramic views.",
+    imageUrl: `https://assets.scrimba.com/advanced-react/react-router/the-cruiser.png`,
+  },
+  {
+    uuid: uuid(),
+    name: "Green Wonder",
+    type: "rugged",
+    price: 70,
+    description:
+      "Green Wonder is a stylish, eco-friendly van perfect for adventurous travelers seeking sustainability.",
+    imageUrl: `https://assets.scrimba.com/advanced-react/react-router/green-wonder.png`,
+  },
+];
+
+export default vansData;
