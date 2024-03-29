@@ -4,7 +4,7 @@ const vansData = [
   {
     uuid: uuid(),
     name: "Modest Explorer",
-    type: "simple",
+    type: "Simple",
     price: 60,
     description:
       "The Modest Explorer is designed to get you into nature with solar panels, a composting toilet, water tank, and kitchenette.",
@@ -14,7 +14,7 @@ const vansData = [
   {
     uuid: uuid(),
     name: "Beach Bum",
-    type: "rugged",
+    type: "Rugged",
     price: 80,
     description:
       "Beach Bum is a portable home inspired by surfers with unique features for adventurous travelers.",
@@ -24,7 +24,7 @@ const vansData = [
   {
     uuid: uuid(),
     name: "Reliable Red",
-    type: "luxury",
+    type: "Luxury",
     price: 100,
     description:
       "Reliable Red is a cozy van for travelers, equipped with a small kitchen and ample space.",
@@ -34,7 +34,7 @@ const vansData = [
   {
     uuid: uuid(),
     name: "Dreamfinder",
-    type: "simple",
+    type: "Simple",
     price: 65,
     description:
       "Dreamfinder is perfect for travel with a spacious interior, large windows, and easy-to-clean flooring.",
@@ -44,7 +44,7 @@ const vansData = [
   {
     uuid: uuid(),
     name: "The Cruiser",
-    type: "luxury",
+    type: "Luxury",
     price: 120,
     description:
       "The Cruiser offers comfort and luxury with spacious interiors, ample storage, and panoramic views.",
@@ -54,7 +54,7 @@ const vansData = [
   {
     uuid: uuid(),
     name: "Green Wonder",
-    type: "rugged",
+    type: "Rugged",
     price: 70,
     description:
       "Green Wonder is a stylish, eco-friendly van perfect for adventurous travelers seeking sustainability.",

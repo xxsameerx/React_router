@@ -22,7 +22,7 @@ export default function HostVans() {
                 padding: "1rem",
                 display: "flex",
                 margin: "3rem",
-                backgroundColor: "ffe6e6",
+                backgroundColor: "white",
               }}
             >
               <Link to={`/host/hostvan/${uuid}`}>
