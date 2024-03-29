@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams, NavLink, Link, Outlet } from "react-router-dom";
 import vansData from "../vans/vanData";
 
 export default function HostVanDetail() {
@@ -15,51 +15,30 @@ export default function HostVanDetail() {
   }
 
   return (
-    <>
-      <h1>Van Details</h1>
-      <div
-        style={{
-          backgroundColor: "ffe6e6",
-          display: "flex",
-          margin: "5rem 4rem",
-          width: "80%",
-          padding: "2rem 1rem",
-        }}
-      >
-        <div style={{ marginRight: "2rem" }}>
-          <img style={{ width: "100%" }} src={data.imageUrl} alt={data.name} />
-        </div>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "space-between",
-          }}
-        >
-          <div>
+    <section>
+      <Link to=".." relative="path" className="back-button">
+        &larr; <span>Back to all vans</span>
+      </Link>
+
+      <div className="host-van-detail-layout-container">
+        <div className="host-van-detail">
+          <img src={data.imageUrl} />
+          <div className="host-van-detail-info-text">
+            <i className={`van-type van-type-${data.type}`}>{data.type}</i>
             <h3>{data.name}</h3>
-            <p>Type: {data.type}</p>
-            <p>Price: ${data.price}/day</p>
+            <h4>${data.price}/day</h4>
           </div>
-          <strong style={{ color: "red", fontWeight: "lighter" }}>
-            {data.description}
-          </strong>
-          <div></div>
         </div>
-        <nav>
-          <ul style={{ display: "flex", listStyleType: "none", padding: 0 }}>
-            <li style={{ marginRight: "1rem" }}>
-              <Link to="details">Details</Link>
-            </li>
-            <li style={{ marginRight: "1rem" }}>
-              <Link to="pricing">Pricing</Link>
-            </li>
-            <li>
-              <Link to="photo">Photos</Link>
-            </li>
-          </ul>
+
+        <nav className="host-van-detail-nav">
+          <NavLink to="." end>
+            Details
+          </NavLink>
+          <NavLink to="pricing">Pricing</NavLink>
+          <NavLink to="photos">Photos</NavLink>
         </nav>
+        {/* <Outlet context={{ data }} /> */}
       </div>
-    </>
+    </section>
   );
 }

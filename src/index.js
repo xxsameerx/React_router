@@ -37,8 +37,8 @@ function App() {
             <Route path="income" element={<Income />} />
             <Route path="hostvan" element={<HostVans />} />
             <Route path="reviews" element={<Reviews />} />
-            <Route path="hostvan/:hostVanId" element={<HostVanDetail />} />
-            <Route element={<HostVanSpecification />}>
+            <Route path="hostvan/:hostVanId" element={<HostVanDetail />}>
+              <Route index element={<HostVanSpecification />} />
               <Route path="pricing" element={<HostVanPricing />} />
               <Route path="photos" element={<HostVanPhoto />} />
             </Route>
