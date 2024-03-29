@@ -33,7 +33,7 @@ function App() {
             <Route index element={<Dashboard />} />
             <Route path="income" element={<Income />} />
             <Route path="hostvan" element={<HostVans />} />
-            <Route path="hostvan/:id" element={<HostVanDetail />} />
+            <Route path="hostvan/:hostVanId" element={<HostVanDetail />} />
             <Route path="reviews" element={<Reviews />} />
           </Route>
         </Route>
