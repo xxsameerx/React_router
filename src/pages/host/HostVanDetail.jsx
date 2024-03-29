@@ -49,13 +49,13 @@ export default function HostVanDetail() {
         <nav>
           <ul style={{ display: "flex", listStyleType: "none", padding: 0 }}>
             <li style={{ marginRight: "1rem" }}>
-              <Link to={`/details/${data.uuid}`}>Details</Link>
+              <Link to="details">Details</Link>
             </li>
             <li style={{ marginRight: "1rem" }}>
-              <Link to={`/pricing/${data.uuid}`}>Pricing</Link>
+              <Link to="pricing">Pricing</Link>
             </li>
             <li>
-              <Link to={`/photos/${data.uuid}`}>Photos</Link>
+              <Link to="photo">Photos</Link>
             </li>
           </ul>
         </nav>
